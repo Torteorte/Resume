@@ -24,6 +24,7 @@ header {
       flex-direction  : row;
       justify-content : space-between;
       position        : fixed;
+      z-index         : 100;
       width           : 100%;
       background-color: #424242;
 
@@ -89,7 +90,7 @@ header {
 }
 
 main {
-   width     : 1200px;
+   width     : 1000px;
    margin    : auto;
    margin-top: 20px;
 
@@ -106,7 +107,7 @@ main {
    img {
       position     : absolute;
       top          : -75px;
-      left         : 523px;
+      left         : 423px;
       right        : 0;
       border-radius: 50%;
       width        : 150px;
@@ -121,6 +122,179 @@ main {
    }
 }
 
+.skills {
+   h2 {
+      margin        : 75px 0 25px;
+      color         : #555555;
+      text-align    : center;
+      letter-spacing: 1px;
+   }
+}
+
+.programmer-skills {
+   display              : grid;
+   grid-template-columns: 1fr 1fr;
+
+   .skill-item {
+      width             : 400px;
+      margin            : 30px 30px;
+      background-color  : white;
+      -webkit-box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow   : 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+      box-shadow        : 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+
+      &:nth-child(2n) {
+         margin-left: auto;
+      }
+
+      h3 {
+         padding            : 15px 45px;
+         color              : white;
+         background         : no-repeat #424242;
+         background-position: 10px center;
+         background-size    : 30px 30px;
+         letter-spacing     : 1px;
+
+         &.html {
+            background-image: url("./img/html5.png");
+         }
+
+         &.css {
+            background-image: url("./img/css3.png");
+         }
+
+         &.js {
+            background-image: url("./img/javascript.png");
+         }
+
+         &.react {
+            background-image: url("./img/favicon.ico");
+         }
+      }
+
+      p {
+         padding   : 40px 25px 25px;
+         color     : #7b7a7b;
+         text-align: left;
+      }
+   }
+}
+
+.common-skills {
+   display              : grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap             : 25px;
+
+   li {
+      color             : white;
+      background-color  : #424242;
+      -webkit-box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow   : 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
+      box-shadow        : 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
+      border-radius     : 2px;
+
+      h3 {
+         padding   : 25px;
+         text-align: center;
+         color     : white;
+      }
+
+      dl {
+         padding: 0 20px 20px;
+
+         .section {
+            font-size: 15px;
+            margin   : 20px 10px;
+
+            dt {
+               color: white;
+            }
+
+            span {
+               color: white;
+               float: right;
+            }
+
+            .skills-level {
+               background-color: tomato;
+               height          : 3px;
+            }
+         }
+
+         dd {
+            margin-top      : 10px;
+            background-color: #8f8c8c;
+         }
+      }
+   }
+}
+
+.examples {
+   margin-top: 80px;
+
+   h2 {
+      font-weight   : bold;
+      letter-spacing: 1px;
+      font-size     : 28px;
+      color         : #86898c;
+      text-align    : center;
+   }
+
+   .table-tags {
+      margin            : 50px auto;
+      width             : 320px;
+      background-color  : rgb(248, 248, 248);
+      display           : flex;
+      justify-content   : space-between;
+      -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow   : 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+      box-shadow        : 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+
+      li {
+         padding   : 15px 15px;
+         text-align: center;
+         cursor    : pointer;
+
+         &.active {
+            background-color: rgb(235, 235, 235);
+         }
+      }
+   }
+}
+
+.works-items {
+   margin               : 50px 10px;
+   display              : grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   li {
+      margin  : 10px;
+      height  : 400px;
+      overflow: hidden;
+
+      background: rgba(52, 152, 219, 0.9);
+
+      &:nth-child(2) img {
+         opacity: 0.8;
+      }
+
+      img {
+         height    : 400px;
+         width     : 100%;
+         transition: 0.8s;
+
+         &:hover {
+            transform: scale(1.2);
+            opacity  : 0.1;
+         }
+      }
+
+
+
+   }
+}
+
 footer {
+   padding         : 50px;
    background-color: white;
 }
