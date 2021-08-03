@@ -262,7 +262,7 @@ main {
 }
 .examples .table-tags {
   margin: 50px auto;
-  width: 320px;
+  width: 240px;
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
@@ -284,10 +284,11 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .works-items li {
+  position: relative;
   margin: 10px;
   height: 400px;
   overflow: hidden;
-  background: rgba(52, 152, 219, 0.9);
+  transition: 0.8s;
 }
 .works-items li:nth-child(2) img {
   opacity: 0.8;
@@ -297,13 +298,97 @@ main {
   width: 100%;
   transition: 0.8s;
 }
-.works-items li img:hover {
+.works-items li div {
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  transition: 0.8s;
+}
+.works-items li div h3 {
+  color: white;
+  margin: 15px 0;
+  font-size: 20px;
+}
+.works-items li div p {
+  color: white;
+  margin: 15px 0;
+}
+.works-items li div a {
+  display: inline-block;
+  color: white;
+  margin: 0px 10px 10px 0;
+  padding: 10px;
+  border: solid 1px rgba(255, 255, 255, 0.596);
+  transition: 0.3s;
+}
+.works-items li div a:hover {
+  border: solid 1px #ffffff;
+  box-shadow: 0 0 1px 1px white;
+}
+.works-items li:hover {
+  background: rgba(52, 152, 219, 0.9);
+}
+.works-items li:hover img {
   transform: scale(1.2);
   opacity: 0.1;
 }
+.works-items li:hover div {
+  opacity: 1;
+}
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/adventpro/v11/V8mDoQfxVT4Dvddr_yOwjZGPDbY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/adventpro/v11/V8mAoQfxVT4Dvddr_yOwtT0.ttf) format('truetype');
+}
 footer {
-  padding: 50px;
+  padding: 25px;
   background-color: white;
+  font-family: 'Advent Pro', sans-serif;
+}
+footer .right-part-footer {
+  width: 30%;
+  margin-left: auto;
+}
+footer .right-part-footer .contacts {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #505050;
+}
+footer .right-part-footer p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #505050;
+}
+footer .right-part-footer a {
+  display: inline-block;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  background: url("/telegram.173ac4ec.png") no-repeat center;
+  background-size: 80% 80%;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+footer .right-part-footer a:nth-of-type(2) {
+  background: url("/facebook.1ac97181.png") no-repeat center;
+  background-size: 80% 80%;
+}
+footer .right-part-footer a:nth-of-type(3) {
+  background: url("/instagram.c2789421.png") no-repeat center;
+  background-size: 80% 80%;
 }
 
 
