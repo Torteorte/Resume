@@ -1,99 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
-
-* {
-   margin         : 0px;
-   padding        : 0px;
-   color          : black;
-   text-decoration: none;
-   list-style     : none;
-   border         : none;
-}
-
-body {
-   background-color: #eaeaea;
-   font-family     : 'Roboto', sans-serif;
-}
-
-header {
-   -webkit-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
-   -moz-box-shadow   : 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
-   box-shadow        : 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
-
-   .head-part {
-      display         : flex;
-      flex-direction  : row;
-      justify-content : space-between;
-      position        : fixed;
-      z-index         : 100;
-      width           : 100%;
-      background-color: #424242;
-
-      -webkit-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
-      -moz-box-shadow   : 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
-      box-shadow        : 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
-
-      div {
-         display       : flex;
-         flex-direction: row;
-         align-self    : center;
-         margin-left   : 10px;
-
-         p {
-            align-self: center;
-            text-align: center;
-            color     : white;
-            font-size : 20px;
-
-            span {
-               color: yellowgreen;
-            }
-         }
-
-         img {
-            width : 40px;
-            height: 40px;
-         }
-      }
-
-      button {
-         margin          : 15px 15px;
-         padding         : 10px 15px;
-         letter-spacing  : 1px;
-         font-size       : 16px;
-         background-color: rgb(130, 180, 64);
-         outline         : none;
-         border-radius   : 5px;
-
-         a {
-            color: white;
-         }
-      }
-   }
-
-   .main-self-information {
-      padding         : 20px 0 70px;
-      background-color: #555555;
-      text-align      : center;
-
-      h2 {
-         margin-top: 70px;
-         color     : white;
-         font-size : 30px;
-      }
-
-      h3 {
-         color      : white;
-         font-size  : 24px;
-         font-weight: 400;
-      }
-   }
-}
-
 main {
    width     : 1000px;
    margin    : auto;
    margin-top: 20px;
-
 }
 
 .about-me-part {
@@ -156,20 +64,26 @@ main {
          letter-spacing     : 1px;
 
          &.html {
-            background-image: url("./img/html5.png");
+            background-image: url("./../img/html5.png");
          }
 
          &.css {
-            background-image: url("./img/css3.png");
+            background-image: url("./../img/css3.png");
          }
 
          &.js {
-            background-image: url("./img/javascript.png");
+            background-image: url("./../img/javascript.png");
          }
 
          &.react {
-            background-image: url("./img/favicon.ico");
+            background-image: url("./../img/favicon.ico");
          }
+      }
+
+      &:nth-child(2n) h3,
+      &:nth-child(2n) p {
+         text-align         : right;
+         background-position: 360px center;
       }
 
       p {
@@ -188,10 +102,10 @@ main {
    li {
       color             : white;
       background-color  : #424242;
+      border-radius     : 2px;
       -webkit-box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
       -moz-box-shadow   : 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
       box-shadow        : 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
-      border-radius     : 2px;
 
       h3 {
          padding   : 25px;
@@ -203,21 +117,21 @@ main {
          padding: 0 20px 20px;
 
          .section {
-            font-size: 15px;
             margin   : 20px 10px;
+            font-size: 15px;
 
             dt {
                color: white;
             }
 
             span {
-               color: white;
                float: right;
+               color: white;
             }
 
             .skills-level {
-               background-color: tomato;
                height          : 3px;
+               background-color: tomato;
             }
          }
 
@@ -234,18 +148,18 @@ main {
 
    h2 {
       font-weight   : bold;
-      letter-spacing: 1px;
       font-size     : 28px;
+      letter-spacing: 1px;
       color         : #86898c;
       text-align    : center;
    }
 
    .table-tags {
-      margin            : 50px auto;
-      width             : 240px;
-      background-color  : rgb(248, 248, 248);
       display           : flex;
       justify-content   : space-between;
+      width             : 240px;
+      margin            : 50px auto;
+      background-color  : rgb(248, 248, 248);
       -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
       -moz-box-shadow   : 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
       box-shadow        : 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
@@ -263,9 +177,9 @@ main {
 }
 
 .works-items {
-   margin               : 50px 10px;
    display              : grid;
    grid-template-columns: 1fr 1fr 1fr;
+   margin               : 50px 10px;
 
    li {
       position  : relative;
@@ -279,36 +193,36 @@ main {
       }
 
       img {
-         height    : 400px;
          width     : 100%;
+         height    : 400px;
          transition: 0.8s;
       }
 
       div {
          position  : absolute;
-         padding   : 20px;
          bottom    : 0;
          left      : 0;
+         padding   : 20px;
          opacity   : 0;
          color     : white;
          transition: 0.8s;
 
          h3 {
-            color    : white;
             margin   : 15px 0;
+            color    : white;
             font-size: 20px;
          }
 
          p {
-            color : white;
             margin: 15px 0;
+            color : white;
          }
 
          a {
             display   : inline-block;
-            color     : white;
             margin    : 0px 10px 10px 0;
             padding   : 10px;
+            color     : white;
             border    : solid 1px rgba(255, 255, 255, 0.596);
             transition: 0.3s;
 
@@ -330,53 +244,6 @@ main {
 
       div {
          opacity: 1;
-      }
-   }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400&display=swap');
-
-footer {
-   padding         : 25px;
-   background-color: white;
-   font-family     : 'Advent Pro', sans-serif;
-
-   .right-part-footer {
-      width      : 30%;
-      margin-left: auto;
-
-      .contacts {
-         margin   : 10px 0;
-         font-size: 22px;
-         color    : rgb(80, 80, 80);
-      }
-
-      p {
-         margin   : 10px 0;
-         font-size: 18px;
-         color    : rgb(80, 80, 80);
-      }
-
-      a {
-         display        : inline-block;
-         padding        : 5px;
-         width          : 25px;
-         height         : 25px;
-         background     : url("./img/telegram.png") no-repeat center;
-         background-size: 80% 80%;
-         border         : 1px solid rgb(206, 206, 206);
-         border-radius  : 5px;
-         margin-right   : 10px;
-
-         &:nth-of-type(2) {
-            background     : url("./img/facebook.png") no-repeat center;
-            background-size: 80% 80%;
-         }
-
-         &:nth-of-type(3) {
-            background     : url("./img/instagram.png") no-repeat center;
-            background-size: 80% 80%;
-         }
       }
    }
 }

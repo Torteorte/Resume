@@ -1,0 +1,207 @@
+main {
+  width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+}
+.about-me-part {
+  position: relative;
+  padding: 50px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.about-me-part img {
+  position: absolute;
+  top: -75px;
+  left: 423px;
+  right: 0;
+  border-radius: 50%;
+  width: 150px;
+  border: 4px solid white;
+  box-shadow: 0 0 5px 0 #d6d6d6;
+}
+.about-me-part p {
+  margin-top: 90px;
+  text-align: center;
+  color: #8c8c8c;
+}
+.skills h2 {
+  margin: 75px 0 25px;
+  color: #555555;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.programmer-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.programmer-skills .skill-item {
+  width: 400px;
+  margin: 30px 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+}
+.programmer-skills .skill-item:nth-child(2n) {
+  margin-left: auto;
+}
+.programmer-skills .skill-item h3 {
+  padding: 15px 45px;
+  color: white;
+  background: no-repeat #424242;
+  background-position: 10px center;
+  background-size: 30px 30px;
+  letter-spacing: 1px;
+}
+.programmer-skills .skill-item h3.html {
+  background-image: url("../img/html5.png");
+}
+.programmer-skills .skill-item h3.css {
+  background-image: url("../img/css3.png");
+}
+.programmer-skills .skill-item h3.js {
+  background-image: url("../img/javascript.png");
+}
+.programmer-skills .skill-item h3.react {
+  background-image: url("../img/favicon.ico");
+}
+.programmer-skills .skill-item:nth-child(2n) h3,
+.programmer-skills .skill-item:nth-child(2n) p {
+  text-align: right;
+  background-position: 360px center;
+}
+.programmer-skills .skill-item p {
+  padding: 40px 25px 25px;
+  color: #7b7a7b;
+  text-align: left;
+}
+.common-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+.common-skills li {
+  color: white;
+  background-color: #424242;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
+}
+.common-skills li h3 {
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+.common-skills li dl {
+  padding: 0 20px 20px;
+}
+.common-skills li dl .section {
+  margin: 20px 10px;
+  font-size: 15px;
+}
+.common-skills li dl .section dt {
+  color: white;
+}
+.common-skills li dl .section span {
+  float: right;
+  color: white;
+}
+.common-skills li dl .section .skills-level {
+  height: 3px;
+  background-color: tomato;
+}
+.common-skills li dl dd {
+  margin-top: 10px;
+  background-color: #8f8c8c;
+}
+.examples {
+  margin-top: 80px;
+}
+.examples h2 {
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #86898c;
+  text-align: center;
+}
+.examples .table-tags {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin: 50px auto;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.examples .table-tags li {
+  padding: 15px 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.examples .table-tags li.active {
+  background-color: #ebebeb;
+}
+.works-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px 10px;
+}
+.works-items li {
+  position: relative;
+  margin: 10px;
+  height: 400px;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.works-items li:nth-child(2) img {
+  opacity: 0.8;
+}
+.works-items li img {
+  width: 100%;
+  height: 400px;
+  transition: 0.8s;
+}
+.works-items li div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  opacity: 0;
+  color: white;
+  transition: 0.8s;
+}
+.works-items li div h3 {
+  margin: 15px 0;
+  color: white;
+  font-size: 20px;
+}
+.works-items li div p {
+  margin: 15px 0;
+  color: white;
+}
+.works-items li div a {
+  display: inline-block;
+  margin: 0px 10px 10px 0;
+  padding: 10px;
+  color: white;
+  border: solid 1px rgba(255, 255, 255, 0.596);
+  transition: 0.3s;
+}
+.works-items li div a:hover {
+  border: solid 1px #ffffff;
+  box-shadow: 0 0 1px 1px white;
+}
+.works-items li:hover {
+  background: rgba(52, 152, 219, 0.9);
+}
+.works-items li:hover img {
+  transform: scale(1.2);
+  opacity: 0.1;
+}
+.works-items li:hover div {
+  opacity: 1;
+}

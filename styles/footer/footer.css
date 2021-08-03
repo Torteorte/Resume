@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/adventpro/v11/V8mDoQfxVT4Dvddr_yOwjZGPDbY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/adventpro/v11/V8mAoQfxVT4Dvddr_yOwtT0.ttf) format('truetype');
+}
+footer {
+  padding: 25px;
+  background-color: white;
+  font-family: 'Advent Pro', sans-serif;
+}
+footer .right-part-footer {
+  width: 30%;
+  margin-left: auto;
+}
+footer .right-part-footer .contacts {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #505050;
+}
+footer .right-part-footer p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #505050;
+}
+footer .right-part-footer a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin-right: 10px;
+  background: url("../img/telegram.png") no-repeat center;
+  background-size: 80% 80%;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
+footer .right-part-footer a:nth-of-type(2) {
+  background: url("../img/facebook.png") no-repeat center;
+  background-size: 80% 80%;
+}
+footer .right-part-footer a:nth-of-type(3) {
+  background: url("../img/instagram.png") no-repeat center;
+  background-size: 80% 80%;
+}

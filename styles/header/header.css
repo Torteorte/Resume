@@ -1,0 +1,67 @@
+header {
+  -webkit-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+}
+header .head-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #424242;
+  -webkit-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+}
+header .head-part div {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-left: 10px;
+}
+header .head-part div p {
+  align-self: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+header .head-part div p span {
+  color: yellowgreen;
+}
+header .head-part div img {
+  width: 40px;
+  height: 40px;
+}
+header .head-part button {
+  margin: 15px 15px;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background-color: #82b440;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+header .head-part button:hover {
+  background-color: #8ed335;
+}
+header .head-part button a {
+  color: white;
+}
+header .main-self-information {
+  padding: 20px 0 70px;
+  background-color: #555555;
+  text-align: center;
+}
+header .main-self-information h2 {
+  margin-top: 70px;
+  color: white;
+  font-size: 30px;
+}
+header .main-self-information h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
